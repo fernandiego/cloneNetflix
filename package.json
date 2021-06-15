@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "Clone Netflix com filmes do Studio Ghibli",
   "main": "server/main.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "nodemon server/main.js"
