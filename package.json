@@ -1,40 +1,37 @@
 {
-  "name": "netflixclone",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.11.4",
-    "@testing-library/react": "^11.1.0",
-    "@testing-library/user-event": "^12.1.10",
-    "axios": "^0.21.1",
-    "express": "^4.17.1",
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "4.0.3",
-    "web-vitals": "^1.0.1"
-  },
+  "name": "clonenetflix",
+  "version": "1.0.0",
+  "description": "Clone Netflix com filmes do Studio Ghibli",
+  "main": "server/main.js",
+  "type": "module",
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/main.js"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fernandiego/cloneNetflix.git"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [
+    "react",
+    "studio",
+    "ghibli",
+    "api",
+    "javascript",
+    "express",
+    "node"
+  ],
+  "author": "Fox",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/fernandiego/cloneNetflix/issues"
+  },
+  "homepage": "https://github.com/fernandiego/cloneNetflix#readme",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.7"
   }
 }
