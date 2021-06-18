@@ -4,7 +4,7 @@ const axios = require('axios')
 
 
 listL.get('/', async (req, res) => {
-	res.send('get listlocations')
+	res.send('get locations')
 })
 
 exports.listL = listL;
