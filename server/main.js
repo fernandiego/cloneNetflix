@@ -17,7 +17,7 @@ app.use('/listpeople', listP)
 app.use('/listlocations', listL)
 
 app.get('/', async (req, res) => {
-	res.send('home main')
+	res.send('home dessa marmota')
 })
 
 app.listen(process.env.PORT || 1234, () => {
