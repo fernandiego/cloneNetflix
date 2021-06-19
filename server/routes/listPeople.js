@@ -1,10 +1,12 @@
 const express = require('express')
 const listP = express()
-const axios = require('axios')
+const {api} = require('../apighibli')
 
 
 listP.get('/', async (req, res) => {
-	res.send('get people')
+	const ret = await api.getPeople()
+	console.log(ret.data)
+	res.send(ret.data)
 })
 
 exports.listP = listP;

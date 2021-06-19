@@ -1,12 +1,10 @@
 const express = require('express')
 const listF = express()
-const axios = require('axios')
-const baseURL = "https://ghibliapi.herokuapp.com"
-const api = axios.create({baseURL})
+const {api} = require('../apighibli')
 
 
 listF.get('/', async (req, res) => {
-	const ret = await axios.get("https://ghibliapi.herokuapp.com/films")
+	const ret = await api.getFilms()
 	console.log(ret.data)
 	res.send(ret.data)
 })

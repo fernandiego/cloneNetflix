@@ -1,10 +1,12 @@
 const express = require('express')
 const listL = express()
-const axios = require('axios')
+const {api} = require('../apighibli')
 
 
 listL.get('/', async (req, res) => {
-	res.send('get locations')
+	const ret = await api.getLocations()
+	console.log(ret.data)
+	res.send(ret.data)
 })
 
 exports.listL = listL;
